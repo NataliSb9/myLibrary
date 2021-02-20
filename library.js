@@ -8,7 +8,7 @@ var Library = /** @class */ (function () {
     Library.prototype.toString = function () {
         var resultado = "";
         for (var i = 0; i < this.books.length; i++) {
-            resultado += this.books[i].toString();
+            resultado += this.books[i].toString() + "\n";
         }
         return resultado;
     };

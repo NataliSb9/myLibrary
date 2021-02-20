@@ -7,10 +7,12 @@ export class Library {
     constructor(books: Book[]) {
         this.books = books;
     }
+    
+    //Metodos
     public toString(): string {
         let resultado: string=""
         for (let i = 0; i < this.books.length; i++) {
-            resultado += this.books[i].toString();
+            resultado += this.books[i].toString()+"\n";
         }
         return resultado
     }

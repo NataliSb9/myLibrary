@@ -9,7 +9,13 @@ var Book = /** @class */ (function () {
         this.editorial = editorial;
     }
     Book.prototype.toString = function () {
-        var description = "\n" + "* Title: " + this.title + "\n" + "* Edition: " + this.edition + "\n" + "* Original title: " + this.originalTitle + "\n" + "* Editorial: " + this.editorial + "\n" + "* Pge number: " + this.pageNumber + "\n" + "* Language: " + this.language + "\n" + "* Genre: " + this.genre + "\n";
+        var description = "* Title: " + this.title + "\n" +
+            "* Edition: " + this.edition + "\n" +
+            "* Original title: " + this.originalTitle + "\n" +
+            "* Editorial: " + this.editorial + "\n" +
+            "* Pge number: " + this.pageNumber + "\n" +
+            "* Language: " + this.language + "\n" +
+            "* Genre: " + this.genre + "\n";
         if (this.author !== undefined) {
             description += "* Writer: " + this.author.toString();
         }

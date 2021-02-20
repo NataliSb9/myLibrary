@@ -19,7 +19,15 @@ export class Book {
 
     public toString(): string {
 
-        let description: string = "\n" + "* Title: " + this.title + "\n" + "* Edition: " + this.edition + "\n" + "* Original title: " + this.originalTitle + "\n" + "* Editorial: " + this.editorial + "\n" + "* Pge number: " + this.pageNumber + "\n" + "* Language: " + this.language + "\n" + "* Genre: " + this.genre + "\n"
+        let description: string = 
+        "* Title: " + this.title + "\n" + 
+        "* Edition: " + this.edition + "\n" + 
+        "* Original title: " + this.originalTitle + "\n" + 
+        "* Editorial: " + this.editorial + "\n" + 
+        "* Pge number: " + this.pageNumber + "\n" + 
+        "* Language: " + this.language + "\n" + 
+        "* Genre: " + this.genre + "\n"
+
         if (this.author !== undefined) {
             description += "* Writer: " + this.author.toString()
         }
