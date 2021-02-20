@@ -19,8 +19,8 @@ export class Author {
 
     //Metodos:
     toString(){
-        console.log(
-            "\n"+"Name: "+ this.name+"\n"+ "Surname: "+ this.surname+"\n"+"Age: "+this.age+ "\n" + "Genre: "+this.genre+ "\n"+ "Is Retired?: "+this.isRetired+ "\n"+ "Nationality: "+this.nationality+ "\n"+"Awards: "+ this.awards+"\n"
-        )
+        let resultado:string =  "\n"+" - Name: "+ this.name+"\n"+ " - Surname: "+ this.surname+"\n"+" - Age: "+this.age+ "\n" + " - Genre: "+this.genre+ "\n"+ " - Is Retired?: "+this.isRetired+ "\n"+ " - Nationality: "+this.nationality+ "\n"+" - Awards: "+ this.awards+"\n"
+        return resultado
+        
     }
 }
