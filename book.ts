@@ -17,11 +17,11 @@ export class Book {
         this.editorial = editorial
     }
 
-    toStringBook() {
+    public toString():string {
         let resultado: string = "\n" + "* Title: " + this.title + "\n" + "* Writer: " + this.author.toString() + "\n" + "* Edition: " + this.edition +"\n"+"* Original title: "+this.originalTitle+ "\n" + "* Editorial: " + this.editorial + "\n" + "* Pge number: " + this.pageNumber + "\n" + "* Language: " + this.language + "\n" + "* Genre: " + this.genre + "\n"
         return resultado
     }
-    setAuthor(author: Author){
+    public setAuthor(author: Author){
         this.author = author;
     }
 }

@@ -8,7 +8,7 @@ var Book = /** @class */ (function () {
         this.edition = edition;
         this.editorial = editorial;
     }
-    Book.prototype.toStringBook = function () {
+    Book.prototype.toString = function () {
         var resultado = "\n" + "* Title: " + this.title + "\n" + "* Writer: " + this.author.toString() + "\n" + "* Edition: " + this.edition + "\n" + "* Original title: " + this.originalTitle + "\n" + "* Editorial: " + this.editorial + "\n" + "* Pge number: " + this.pageNumber + "\n" + "* Language: " + this.language + "\n" + "* Genre: " + this.genre + "\n";
         return resultado;
     };
