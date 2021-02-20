@@ -16,4 +16,4 @@ book1.setAuthor(author1)
 let booksArr: Book[] = [book1,book2]
 let miLibreria = new Library(booksArr);
 
-console.log(book2.toString())
+console.log(miLibreria.toString())

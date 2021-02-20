@@ -8,9 +8,9 @@ export class Library {
         this.books = books;
     }
     public toString(): string {
-        let resultado: string = "";
+        let resultado: string=""
         for (let i = 0; i < this.books.length; i++) {
-            resultado = this.books[i].toString();
+            resultado += this.books[i].toString();
         }
         return resultado
     }

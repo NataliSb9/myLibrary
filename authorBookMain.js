@@ -12,4 +12,4 @@ book1.setAuthor(author1);
 //Objeto Libreria:
 var booksArr = [book1, book2];
 var miLibreria = new library_1.Library(booksArr);
-console.log(book2.toString());
+console.log(miLibreria.toString());

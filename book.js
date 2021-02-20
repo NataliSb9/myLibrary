@@ -9,8 +9,11 @@ var Book = /** @class */ (function () {
         this.editorial = editorial;
     }
     Book.prototype.toString = function () {
-        var resultado = "\n" + "* Title: " + this.title + "\n" + "* Writer: " + this.author.toString() + "\n" + "* Edition: " + this.edition + "\n" + "* Original title: " + this.originalTitle + "\n" + "* Editorial: " + this.editorial + "\n" + "* Pge number: " + this.pageNumber + "\n" + "* Language: " + this.language + "\n" + "* Genre: " + this.genre + "\n";
-        return resultado;
+        var description = "\n" + "* Title: " + this.title + "\n" + "* Edition: " + this.edition + "\n" + "* Original title: " + this.originalTitle + "\n" + "* Editorial: " + this.editorial + "\n" + "* Pge number: " + this.pageNumber + "\n" + "* Language: " + this.language + "\n" + "* Genre: " + this.genre + "\n";
+        if (this.author !== undefined) {
+            description += "* Writer: " + this.author.toString();
+        }
+        return description;
     };
     Book.prototype.setAuthor = function (author) {
         this.author = author;
