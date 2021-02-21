@@ -36,3 +36,8 @@ let readJson: string = fs.readFileSync('miLibreria.JSON');
 let miLibreriaOb = JSON.parse(readJson);
 //console.log(miLibreriaOb);
 
+
+console.log(miLibreria.escribirEnFicheroJson("hola.json"))
+
+//miLibreria.obtenerInstanciaLibreria("miLibreria.json")
+
