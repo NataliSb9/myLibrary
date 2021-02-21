@@ -18,10 +18,19 @@ var Library = /** @class */ (function () {
         var miLibreria = JSON.stringify(this);
         fs.writeFileSync(nombreFichero, miLibreria);
     };
+    Library.prototype.addBook = function (book) {
+        this.books.push(book);
+    };
     Library.prototype.obtenerInstanciaLibreria = function (nombreFichero) {
         var file = fs.readFileSync(nombreFichero);
-        var libreria = JSON.parse(file);
-        return libreria;
+        return JSON.parse(file);
+    };
+    Library.prototype.obtenerInstanciaLibreriaPeroBien = function (nombreFichero) {
+        var file = fs.readFileSync(nombreFichero);
+        var jsonData = JSON.parse(file);
+        var result = new Library([]);
+        result.books = jsonData.books;
+        return result;
     };
     return Library;
 }());

@@ -23,3 +23,5 @@ var readJson = fs.readFileSync('miLibreria.JSON');
 //Para solucionar el como se lee los datos y leerlos en formato JSON usaremos JSON.parse():
 var miLibreriaOb = JSON.parse(readJson);
 //console.log(miLibreriaOb);
+console.log(miLibreria.escribirEnFicheroJson("hola.json"));
+//miLibreria.obtenerInstanciaLibreria("miLibreria.json")
