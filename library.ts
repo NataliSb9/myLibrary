@@ -24,9 +24,9 @@ export class Library {
 
     public obtenerInstanciaLibreria(nombreFichero: string): Library {
 
-        let readFile = fs.readFileSync(nombreFichero);
-        let parseRf: Library = JSON.parse(readFile);
-        
-        return parseRf
+        let file = fs.readFileSync(nombreFichero);
+        let libreria: Library = JSON.parse(file);
+
+        return libreria
     }
 }

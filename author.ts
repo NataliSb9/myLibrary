@@ -7,7 +7,7 @@ export class Author {
     public nationality: string;
     public awards: string;
 
-    constructor(name: string,surname: string, age: number, genre: string, isRetired: boolean, nationality: string, awards: string,) {
+    constructor(name: string, surname: string, age: number, genre: string, isRetired: boolean, nationality: string, awards: string,) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -18,9 +18,16 @@ export class Author {
     }
 
     //Metodos:
-    public toString():string {
-        let resultado:string =  "\n"+" - Name: "+ this.name+"\n"+ " - Surname: "+ this.surname+"\n"+" - Age: "+this.age+ "\n" + " - Genre: "+this.genre+ "\n"+ " - Is Retired?: "+this.isRetired+ "\n"+ " - Nationality: "+this.nationality+ "\n"+" - Awards: "+ this.awards+"\n"
-        return resultado
-        
+    public toString(): string {
+        let resultado: string = 
+        " - Name: " + this.name + 
+        "\n" + " - Surname: " + this.surname + 
+        "\n" + " - Age: " + this.age + 
+        "\n" + " - Genre: " + this.genre + 
+        "\n" + " - Is Retired?: " + this.isRetired + 
+        "\n" + " - Nationality: " + this.nationality + 
+        "\n" + " - Awards: " + this.awards + "\n"
+
+      return resultado
     }
 }
