@@ -1,7 +1,6 @@
 import { Book } from "./book"
 import { Author } from "./author"
 const fs = require('fs')
-
 export class Library {
     public books: Book[];
 
@@ -22,11 +21,18 @@ export class Library {
         fs.writeFileSync(nombreFichero, miLibreria)
     }
 
-    public obtenerInstanciaLibreria(nombreFichero: string): Library {
+    public addBook(book: Book){
+        this.books.push(book)
+    }
 
+  
+    public obtenerInstanciaLibreriaPeroBien(nombreFichero: string): Library {
         let file = fs.readFileSync(nombreFichero);
-        let libreria: Library = JSON.parse(file);
+        let jsonData=  JSON.parse(file);
+//Parse hace que el objeto que creo no tengas las caracter'isticas de la clase que creo, crea un objeto sin mas. Por eso tengo que agregar la clase dnetro del metodo
+        let result = new Library([])
+        result.books = jsonData.books
 
-        return libreria
+        return result
     }
 }
